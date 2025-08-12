@@ -1,0 +1,157 @@
+@import '../../../base.scss';
+
+h1 { 
+    font-family: $fontSecondary;
+    color: rgb(0, 128, 0);
+    text-align: center;
+    margin: 0;
+}
+
+h2 { 
+    font-family: $fontSecondary;
+    color: rgb(0, 128, 0);
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.precursor { 
+    .content { 
+        padding: 5rem;
+    }
+}
+section { 
+& { 
+    display: flex;
+    justify-content: center;
+    padding: 0 0; 
+}
+& > div.content {
+    max-width: 95%; 
+    width: 100%;
+    padding: 10% 0;  
+    margin: auto;
+}
+.border { 
+    padding: 0 2.5%;
+    background-color: $lightgrey;
+}
+
+}
+
+.banner {
+    h2 { 
+        color: $red;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .border { 
+        box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
+        background-color: $lightgrey;
+        z-index: 2;
+    }
+    .content {
+        padding: 4% 0; 
+        box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
+        margin-bottom: 4px;
+        margin-top: -5px;
+        background-color: $white;
+        z-index: 3;
+    }
+}
+
+section { 
+    .banner { 
+        .content.yellow, .border.yellow { 
+            background-color: #ffe177;
+        }
+    }
+    .border.yellow { 
+        background-color: #F8E9B4;
+    }
+    .content.yellow {
+        background-color: #ffe177;
+    }
+}
+.yellow { background-color: #ffe177;}
+
+
+.work-labels {
+    & {
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.75rem;
+    }
+    label {
+        color: grey;
+        box-shadow: 0px 17px 3px -9px black
+    }
+    .labelicons { 
+        display: flex;
+        justify-content: center;
+    }
+    img { 
+        width: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.helix { 
+  & {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    rotate: -45deg;
+    bottom: 41%;
+    // bottom: 42%;
+    z-index: -1;
+  }
+  .dna { 
+    scale: 6.8;
+    opacity: 0.1;
+  }
+}
+
+.hero .content { 
+    padding-top: 4rem;
+}
+
+.banner .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.articlelist .content { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.article { 
+    & { 
+        max-width: 1400px;
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        border-left: 2px solid rgb(0, 128, 0);
+    }
+    h2 { 
+        color: #000;
+        margin-top: 0;
+        margin-bottom: auto;
+        text-align: left;
+    }
+}
+
+hr { 
+    width: 100%;
+    max-width: 1400px;
+    margin-left: 10%;
+    margin-right: 10%;
+}

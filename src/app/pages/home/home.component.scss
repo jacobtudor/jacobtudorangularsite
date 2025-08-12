@@ -1,0 +1,938 @@
+@import '../../../base.scss';
+// hero section and section general
+.hero { 
+  position: relative;
+  //padding: 11rem 30% 15rem 5rem;
+//   padding: 11rem 40% 15rem 5rem;
+    // padding-top: 11rem;
+    // padding-bottom: 11rem;
+}
+.hero { 
+    & { 
+        padding-top: 6rem;
+    }
+    h2 { 
+        & { 
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 200;
+            margin-top: 14rem;
+            padding: 15px
+        }
+        span { 
+            margin: 0.2rem; 
+        }
+    }
+}
+
+.work-labels {
+    & {
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.75rem;
+    }
+    label {
+        color: grey;
+        box-shadow: 0px 17px 3px -9px black
+    }
+}
+
+.helix { 
+  & {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    rotate: -45deg;
+    bottom: 50%;
+    // bottom: 42%;
+    z-index: -1;
+  }
+  .dna { 
+    scale: 6.8;
+    opacity: 0.1;
+  }
+}
+
+.hero-section { 
+& { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0%;
+    background-color: #f8e9b4;
+}
+& > div { 
+    display: flex;
+    justify-content: center;
+    background-color: $secondary; 
+}
+& > div > div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+section { 
+& { 
+    display: flex;
+    justify-content: center;
+    padding: 0 0; 
+}
+& > div.content {
+    max-width: 95%; 
+    width: 100%;
+    padding: 10% 0;  
+    margin: auto;
+}
+.border { 
+    padding: 0 2.5%;
+    background-color: $lightgrey;
+}
+
+}
+
+.banner {
+    h2 { 
+        color: $red;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .border { 
+        box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
+        background-color: $lightgrey;
+        z-index: 2;
+    }
+    .content {
+        padding: 4% 0; 
+        box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.4);
+        margin-bottom: 4px;
+        margin-top: -5px;
+        background-color: $white;
+        z-index: 3;
+    }
+}
+
+section { 
+    .banner { 
+        .content.yellow, .border.yellow { 
+            background-color: #ffe177;
+        }
+    }
+    .border.yellow { 
+        background-color: #F8E9B4;
+    }
+    .content.yellow {
+        background-color: #ffe177;
+    }
+}
+.yellow { background-color: #ffe177;}
+
+
+.hero-img { 
+img { 
+    width: 100%; 
+}
+}
+
+.hero-title { 
+& { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding-top: 2.5rem;
+
+}
+h1 { 
+    margin-bottom: 2rem;
+    font-family: $fontPrimary;
+    font-weight: 400;
+    margin-top: 0rem; 
+    font-size: 3rem; 
+}
+}
+
+.hero-title-icons { 
+& { 
+    display: flex;
+}
+img {
+    min-width: 2.8rem;
+    width: 2.8rem;
+    min-height: 2.8rem;
+    height: 2.8rem;
+}
+
+img.css-icon { 
+    width: 3.4rem; 
+    height: 3.4rem; 
+    margin-top: -4px; 
+}
+}
+
+// Bioinformatics Section
+  .section-title { 
+    & { 
+      display: flex;
+      justify-content: flex-end;
+      width: 30%;
+      min-width: 150px; 
+      padding: 0.5rem 1rem;
+      margin-bottom: 4rem; 
+      background-color: $darkgrey; 
+      border: 2px solid $secondary;
+      border-left: none; 
+      border-radius: 0 25px 25px 0; 
+      box-shadow: $shadow;
+    }
+    h1 { 
+      color: $white; 
+      margin: 0; 
+    }
+  }
+
+  h2 { 
+    margin: 0; 
+    font-size: $font-xlg;
+  }
+
+  h3 { 
+    font-size: $font-lg;
+  }
+
+  h2, h3 { 
+    font-family: $fontSecondary;
+    font-weight: 400; 
+
+  }
+
+  p { 
+    font-family: $fontPrimary;
+    font-size: 0.8rem;
+  }
+
+  .section-1, .section-2, .section-3 { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caption { 
+    min-width: 300px;
+    max-width: 550px;
+    padding: 1rem;
+    margin: 4rem 2rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: $shadow;
+    backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  }
+  .spacer { 
+    min-width: 40%;
+    max-width: 550px;
+  }
+  .section-1 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.databio-section { 
+    .content { 
+        padding: 11%;
+    }
+    h2, h3 { 
+        text-align: center;
+        color: rgb(0, 128, 0);
+    }
+    h3 { 
+        opacity: 0.8;
+    }
+    .databio-icon {
+        & { 
+            display: flex;
+            justify-content: center;
+            max-width: 550px;
+            min-width: 300px;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+        img {
+            width: 5rem;
+        }
+    }
+}
+
+  .icons { 
+    & { 
+      display: flex;
+      justify-content: space-around;
+      height: fit-content;
+      margin: auto 0 ;
+    }
+    img { 
+      max-width: 75px;
+      width: 100%;
+      margin: 1rem; 
+    }
+  }
+
+  .section-2 { 
+    & > div:first-child { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 300px;
+      max-width: 550px;
+      width: 100%;
+    }
+    img { 
+      width: 300px; 
+    }
+  }
+
+  @media (min-width: 565px) { 
+
+.hero-title { 
+    padding-left: 5rem; 
+    padding-top: 0;
+}
+
+    section { 
+      & > div.main {
+        max-width: 100%; 
+        width: 100%;
+        padding: 5% 0 0;
+        padding-bottom: 10%;  
+      }
+    } 
+
+  .main { 
+    div:nth-of-type(2) { 
+      .caption { 
+        margin: 4rem 2rem; 
+      }
+    }
+  }
+}
+
+  .edulife.banner{ 
+    & { text-align: center; }
+    h3 { 
+        color:#8B1A10;
+        opacity: 0.8;
+    }
+    .content { 
+        padding: 1rem 2rem;
+    }
+  }
+  .edulife-section { 
+    .content { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    p { 
+        font-family: "Open Sans";
+        font-size: 1.125rem;
+        max-width: 900px;
+    }
+    a { 
+        font-family: $fontSecondary;
+        display: inline-block;
+        max-width: 8rem;
+        padding: 1rem;
+        margin: 1.5rem;
+        background-color: #ffe177;
+        border-radius: 15px;
+        border: 1px solid; 
+        border-color: rgb(139, 26, 16, 0.7);
+        text-decoration: none;
+        color: rgb(139, 26, 16, 0.7);
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out, border-color 300ms ease-in-out;
+    }
+    a:hover { 
+        color: rgb(139, 26, 16, 1);
+        border-color: #8B1A10;
+        cursor: pointer;
+        background-color: #F8E9B4;
+    }
+
+  }
+
+  @media (min-width: 700px) { 
+    .work-labels { 
+        font-size: 1rem;
+    }
+  }
+
+
+  @media (min-width: 992px) {
+    .section-1, .section-2, .section-3 { 
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1250px) { 
+    
+  }
+
+  @media (min-width: 1600px) { 
+  
+  }
+
+
+// about me section
+.about-me-section { 
+    .border { 
+        background-color: $lightgrey;
+    }
+}
+.about-me-card { 
+& { 
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1rem 5%;
+    background-color: $darkgrey;
+    box-shadow: $shadow;
+}
+
+.info { 
+    &  {
+    padding: 1rem 2rem;
+    }
+    h4 { 
+    color: $light-text;
+    font-family: $fontPrimary;
+    font-size: 1rem;
+    font-weight: 400; 
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    }
+    h3 { 
+    color: $secondary;
+    font-family: $fontSecondary;
+    font-size: 1.75rem; 
+    font-weight: 400; 
+    text-transform: uppercase;
+    }
+    p { 
+    color: $medium-text; 
+    font-family: $fontPrimary;
+    font-size: 1rem;
+    }
+}
+.imagery { 
+    & {
+    position: relative;  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: $secondary;
+    } 
+    & > div:not(div.img-container) {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    }
+}
+img { 
+    margin: 0.5rem;
+    }
+}
+
+.profile-content { 
+    display: flex;
+    flex-direction: column;
+}
+.titles { 
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 5rem;
+    } 
+    img { 
+        width: 25rem;
+        // border-radius: 50%;
+    }
+    h3 { 
+        font-size: $font-size-700;
+        font-weight: 100;
+        letter-spacing: 100%
+    }
+    .my-labels span { 
+        font-size: $font-size-400; 
+    }
+}
+.profile { 
+    padding: 4%; 
+    display: flex;
+    flex-direction: column;
+    b { 
+        position: relative;
+    }
+    b::after { 
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -0.2rem;
+        width: 115%;
+        height: 0.8rem;
+        background-color: $green;
+        z-index: -1;
+    }
+    small { 
+        & {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        padding: 0 1rem;
+        font-size: $font-size-300;
+        background-color: $green; 
+        box-shadow: 0.25rem 0.25rem #000;
+        margin-bottom: 0.25rem;
+        }
+        label { 
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        }
+        label::after { 
+        display: block;
+        content: '';
+        background-color: black;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%; 
+        margin: 1rem;
+        }
+        label:last-child::after { 
+        display: none;
+        }
+    }
+}
+
+.about-me-professional { 
+.angular-icon, .vue-icon, .react-icon, .sass-icon, .firebase-icon { 
+    width: 80px;
+    height: 80px;
+    } 
+}
+
+.about-me-personal { 
+& { 
+    position: relative;
+}
+
+.img-container { 
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -65px;
+    bottom: 0;
+    margin: auto;
+    width:  50%;
+    height: 75%; 
+    overflow: hidden;
+    box-shadow: $shadow;
+}
+.img-5 { 
+    object-fit: cover; 
+    height: 100%;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 { 
+    width: 100px; 
+    box-shadow: $shadow;
+}
+.img-1 { 
+    top: 5%;
+    left: 5%; 
+}
+.img-2 { 
+    top: 25%;
+    right: 5%;
+}
+.img-3 { 
+    top: 50%;
+    left: 5%
+}
+.img-4 { 
+    bottom: 5%;
+    right: 5%;
+}
+}
+
+.quote { 
+& { 
+    top: 100%; 
+    left: 0; 
+    background-color: $secondary;
+    padding: 0 1rem; 
+    box-shadow: $shadow;
+    z-index: 1; 
+}
+h3  {
+    text-transform: uppercase;
+    font-family: $fontSecondary;
+    letter-spacing: 3.9px;
+    line-height: 2rem;
+    text-align: center;
+}
+}
+
+.webservices { 
+    & { 
+        position: relative;
+    }
+    h4 { 
+        font-family: $fontSecondary;
+        font-size: 5rem;
+    }
+    .content { 
+        & { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 4%;
+        }
+        & > div { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        // & > div:first-child {
+        //     .webservicesimg { 
+        //         margin-left: -4rem;
+        //     }
+        //     }
+        //     & > div:nth-child(2) .webservicesimg { 
+        //         margin-left: -10rem;
+        //     }
+        //     & > div:last-child .webservicesimg { 
+        //         margin-left: -2rem;
+        //     }
+        }
+    .yellowside { 
+        position: absolute;
+        display: flex;
+        height: 100%;
+        right: 15%;
+        flex-direction: column;
+        background-color: #ffe177;
+        width: 15%;
+        z-index: -1;
+    }
+
+    .webservicesimg { 
+        & { 
+            display: flex;
+            margin-top: 3rem;
+            margin-bottom: 3rem
+        }
+        img { 
+            width:100%;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .webservices { 
+        .content { 
+            & > div { 
+                flex-direction: row;
+            }
+            .webservicesimg { 
+                width: 50%; 
+            }
+        }
+    }
+}
+
+@media (min-width: 565px) { 
+.hero-section { 
+    & { 
+        flex-direction: row;
+    }
+}
+
+.quote { 
+    position: absolute;
+}
+
+.hero { 
+    h2 { 
+        & { 
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-size: 7rem;
+            font-weight: 200;
+            margin-top: 14rem;
+            padding: 3rem;
+        }
+        span { 
+            margin: 1rem; 
+        }
+    }
+} 
+
+// section { 
+// // & > div {
+// //     max-width: 95%; 
+// //     width: 100%;
+// //     padding: 10% 0;  
+// // }
+// }
+}
+
+@media (min-width: 700px) { 
+
+}
+
+@media (min-width: 992px) {
+
+.profile-content { 
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-card { 
+    .info { 
+    width: 70%; 
+    }
+    .imagery { 
+    & { 
+        width: 30%; 
+    }
+    img { 
+        position: absolute;
+    }
+    }
+}
+
+.about-me-professional { 
+& { 
+    flex-direction: row;
+}
+    .angular-icon, .vue-icon, .react-icon { 
+    width: 80px;
+    height: 80px;
+    } 
+    .sass-icon, .firebase-icon { 
+    width: 50px; 
+    height: 50px; 
+    }
+
+    .angular-icon { 
+    top: 5%;
+    left: 0;
+    right: 0; 
+    margin: auto
+    }
+    .vue-icon { 
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    margin: auto; 
+    }
+    .react-icon { 
+    bottom: 5%; 
+    left: 0;
+    right: 0; 
+    margin: auto
+    }
+    .sass-icon { 
+    top: 26%;
+    left: 0;
+    right: 0; 
+    margin: auto
+    }
+    .firebase-icon { 
+    bottom: 26%;
+    left: 0;
+    right: 0; 
+    margin: auto
+    }
+}
+.about-me-personal { 
+& { 
+    flex-direction: row-reverse; 
+}
+}
+
+.quote { 
+& { 
+    // position: absolute; 
+    top: auto;
+    bottom: -7.25rem; 
+    right: 50%;
+    left: auto;  
+    background-color: $secondary;
+    padding: 0 1rem; 
+    box-shadow: $shadow;
+    z-index: 1; 
+}
+h3  {
+    text-transform: uppercase;
+    font-family: $fontSecondary;
+    letter-spacing: 3.9px;
+    line-height: 2rem;
+    text-align: center;
+}
+}
+
+.hero-section { 
+& { 
+    display: flex;
+    justify-content: center;
+}
+& > div > div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+// div.border:first-of-type { 
+//     padding-left: 5%; 
+// }
+}
+
+.hero-title { 
+h1 { 
+    // margin-left: -50%; 
+    font-size: 4rem; 
+}
+}
+
+// hero section and general 
+.hero-img { 
+    img { 
+    max-width: 700px; 
+    }
+}
+
+.about-me-card { 
+    .info { 
+    h4, p { 
+        font-size: $font-md
+    }
+    h3 { 
+        font-size: $font-xlg; 
+    }
+    }
+}
+
+.about-me-professional { 
+    .angular-icon, .vue-icon, .react-icon { 
+    width: 100px;
+    height: 100px;
+    } 
+    .sass-icon, .firebase-icon { 
+    width: 50px; 
+    height: 50px; 
+    }
+
+    .angular-icon { 
+    top: 5%;
+    left: 5%; 
+    right: auto;
+    }
+    .vue-icon { 
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    margin: auto; 
+    }
+    .react-icon { 
+    bottom: 5%; 
+    left: 22.5%; 
+    right: auto;
+    }
+    .sass-icon { 
+    top: 5%;
+    right: 10%; 
+    left: auto;
+    }
+    .firebase-icon { 
+    bottom: 5%;
+    right: 10%; 
+    left: auto;
+    }
+}
+
+// about me section
+.about-me-personal { 
+    .img-5 { 
+    object-position: -100px 0; 
+}
+}
+}
+
+@media (min-width: 1250px) { 
+
+.about-me-personal { 
+    .info { 
+    padding-left: 6rem; 
+    }
+    .img-container { 
+    display: block;
+}
+
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 { 
+    width: 80px; 
+}
+
+.img-1 { 
+    top: 5%;
+    left: 5%; 
+}
+.img-2 { 
+    top: 25%;
+    left: 32%;
+    right: 0;
+}
+.img-3 { 
+    top: 50%;
+    left: 5%
+}
+.img-4 { 
+    bottom: 5%;
+    left: 32%;
+    right: 0; 
+}
+}
+
+}
+
+@media (min-width: 1600px) { 
+.about-me-personal { 
+    .img-5 { 
+    object-position: 0 0; 
+    }
+}
+}

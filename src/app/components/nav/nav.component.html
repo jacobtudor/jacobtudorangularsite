@@ -1,0 +1,37 @@
+<header :class="{'mobile-menu-open': (menu === true)}">
+    <div>
+        <span class="line"></span>
+        <a [routerLink]="['/']" class="logo">      
+            <app-dna-helix/>
+            <!-- <img src="../assets/svg/Sapling.svg" alt=""> -->
+        </a>
+        <span class="line"></span>
+        <div class="mobile-burger" (click)="OnToggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav>
+        <span class="vl"></span>
+        <a [routerLink]="['/EduLife']">EduLife</a>
+        <div class="shadow"></div>
+        <span class="vl"></span>
+        <a href="#about-me">About me</a>
+        <div class="shadow"></div>
+        <a href="mailto:jacob_tudor@outlook.com">Contact</a>
+        <div class="shadow"></div>
+        <span class="vl"></span>
+    </nav>    
+    <div class="mobile-menu" [ngClass]="{'mobile-menu-open': menuOpen === true}">
+        <nav>
+            <a [routerLink]="['/EduLife']">EduLife</a>
+            <div class="shadow"></div>
+            <span class="vl"></span>
+            <a href="#about-me" (click)="OnToggleMenu()">About me</a>
+            <div class="shadow"></div>
+            <a href="mailto:jacob_tudor@outlook.com" (click)="OnToggleMenu()">Contact</a>
+            <div class="shadow"></div>
+        </nav>
+    </div>
+</header>
