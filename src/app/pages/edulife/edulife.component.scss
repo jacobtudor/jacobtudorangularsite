@@ -131,12 +131,14 @@ section {
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem; 
 }
 
 .article { 
     & { 
         max-width: 1400px;
-        width: 100%;
+        width: 95%;
         margin: 1rem;
         padding: 1rem;
         border-left: 2px solid rgb(0, 128, 0);
@@ -150,7 +152,7 @@ section {
 }
 
 hr { 
-    width: 100%;
+    width: 85%;
     max-width: 1400px;
     margin-left: 10%;
     margin-right: 10%;
